@@ -1,6 +1,6 @@
 //🟢setup Function - will run once
 setup = function() {
-    size(600, 400);
+    size(1000, 1000);
     background(255,255,255,0);
     
     drawFish(200, 200, color(200,0,200)); 
