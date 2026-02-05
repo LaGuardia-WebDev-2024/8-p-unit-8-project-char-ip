@@ -2,9 +2,9 @@
 
 //🟢setup Function - will run once
 setup = function() {
-    size(1000, 1000);
+    size(1200, 800);
     background(255,255,255,0);
-    
+  
     drawFish(200, 200, color(200,0,200)); 
     drawFish(300, 200, color(0,200,200));
 };
@@ -26,6 +26,18 @@ var drawFish = function(fishX, fishY, fishColor){
   text("𓆝", fishX, fishY);
 };
 
+ let animals = ['🦁', '🐯', '🐻'];
+  // Choose a random element from the array.
+  let choice = random(animals);
 
+  // Style the text.
+  textAlign(CENTER);
+  textSize(20);
 
-
+  // Display the emoji.
+  text(choice, 50, 50);
+if (keyIsPressed === true) {
+  if (key === 'r') {
+    fill('red');
+  }
+}
