@@ -4,9 +4,9 @@
 }
 
 body {
-  background-color: aliceblue;
+  background-color: rgb(46, 46, 46);
   text-align: center;
-  color: navy;
+  color: rgb(255, 255, 255);
   margin: auto;
   font-family: water;
 }
@@ -16,9 +16,11 @@ h1{
 }
 
 #myCanvas {
-  background-image: url("wf.jpg");
-  background-size: 1200px 800px;
-  
+  background-image: url("bread.jpg");
+  background-size: 1000px 600px;
+  border-radius: 300px;
+  border: 5px solid rgb(241, 241, 241);
+
 }
 
 

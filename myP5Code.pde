@@ -2,22 +2,30 @@
 
 //🟢setup Function - will run once
 setup = function() {
-    size(1200, 800);
+    size(1000, 600);
     background(255,255,255,0);
-  
-    drawFish(200, 200, color(200,0,200)); 
-    drawFish(300, 200, color(0,200,200));
+    
 };
 
-//🟢draw Function - will run on repeat
-draw = function(){
-
-};
 
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
-
+fill(mouseX,mouseY,0);
+textSize(20);
+text("🐜", mouseX, mouseY);
 }
+
+//🟢draw Function - will run on repeat
+draw = function(){
+textSize(20);
+text("🦠", random(0,900), random(0,1000));
+if(mousePressed){
+  
+}
+
+
+};
+
 
 //🟡drawFish Function - will run when called
 var drawFish = function(fishX, fishY, fishColor){
@@ -25,19 +33,3 @@ var drawFish = function(fishX, fishY, fishColor){
   fill(fishColor);
   text("𓆝", fishX, fishY);
 };
-
- let animals = ['🦁', '🐯', '🐻'];
-  // Choose a random element from the array.
-  let choice = random(animals);
-
-  // Style the text.
-  textAlign(CENTER);
-  textSize(20);
-
-  // Display the emoji.
-  text(choice, 50, 50);
-if (keyIsPressed === true) {
-  if (key === 'r') {
-    fill('red');
-  }
-}
