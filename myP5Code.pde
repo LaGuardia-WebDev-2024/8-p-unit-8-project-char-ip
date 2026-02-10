@@ -5,7 +5,9 @@ var time = 0
 var countdownNum = 5
 var AC = 0
 var GC = 0
-var end = 0 //cut off time
+var end = 0 //cut off 
+
+//Hi Ms.Hall, so I showed my var names to my father and he was actually so upset with them and made me rename them (because he codes professionally and none of these names are understandable TO HIM) so for the record all the full caps ones are named by him. And also "time" used to be "FSR" as in five second rule and "countdownNum" used to be called "time".
 
 
 //🟢setup Function - will run once
@@ -13,7 +15,7 @@ setup = function() {
     size(1000, 600);
     background(255,255,255,0);
 
-    
+    cursor(🐜);
 
 };
 
